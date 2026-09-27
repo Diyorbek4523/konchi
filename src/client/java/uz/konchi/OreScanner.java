@@ -70,7 +70,8 @@ public final class OreScanner {
 
 		BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
 
-		for (int n = 0; n < LAYERS_PER_TICK && currentDy <= radius; n++, currentDy++) {
+				int layers = Math.max(1, 60_000 / ((2 * radius + 1) * (2 * radius + 1)));
+		        for (int n = 0; n < layers && currentDy <= radius; n++, currentDy++) {
 			int y = center.getY() + currentDy;
 
 			for (int dx = -radius; dx <= radius; dx++) {
