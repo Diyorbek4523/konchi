@@ -18,7 +18,7 @@ public final class Settings {
 	/** Rudalarni qidirish radiusi (blok). */
 	public static int oreRadius = 24;
 
-	public static final int[] RADIUS_OPTIONS = {16, 24, 32};
+	public static final int[] RADIUS_OPTIONS = {16, 24, 32, 64, 128};
 
 	private static final Path FILE = FabricLoader.getInstance().getConfigDir().resolve("konchi.properties");
 
