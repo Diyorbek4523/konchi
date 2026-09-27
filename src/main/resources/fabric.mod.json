@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "konchi",
+	"version": "${version}",
+	"name": "Konchi",
+	"description": "Fullbright, rudalar, sandiqlar va o'yinchilarni devor orqali ko'rsatish. Menyu: o'ng Shift.",
+	"authors": ["Konchi"],
+	"license": "CC0-1.0",
+	"icon": "assets/konchi/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["uz.konchi.KonchiClient"]
+	},
+	"mixins": [
+		{ "config": "konchi.client.mixins.json", "environment": "client" }
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
